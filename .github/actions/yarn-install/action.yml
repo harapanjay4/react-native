@@ -5,6 +5,9 @@ runs:
     - name: Install dependencies
       shell: bash
       run: |
+        id
+        ls -la
+        echo "$DANGER_GITHUB_API_TOKEN"
         MAX_ATTEMPTS=2
         ATTEMPT=0
         WAIT_TIME=20
